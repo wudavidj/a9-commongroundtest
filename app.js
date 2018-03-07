@@ -25,6 +25,7 @@ var signup = require('./routes/signup');
 var issue = require('./routes/issue');
 var moodLogSplash = require('./routes/moodLogSplash');
 var issue2 = require('./routes/issue2');
+var homePage2 = require('./routes/homePage2');
 var get_data_json = require('./routes/get_data_json');
 var set_data_json = require('./routes/set_data_json');
 //var history = require('./routes/history');
@@ -71,6 +72,7 @@ app.get('/login', login.view);
 app.get('/issue/:issueName', issue.view);
 app.get('/issue2/:issueName', issue2.view);
 app.get('/get_data_json', get_data_json.view);
+app.get('/homePage2', homePage2.view);
 
 
 app.post('/set_data_json', set_data_json.view);
