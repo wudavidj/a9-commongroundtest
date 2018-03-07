@@ -24,7 +24,7 @@ var login = require('./routes/login');
 var signup = require('./routes/signup');
 var issue = require('./routes/issue');
 var moodLogSplash = require('./routes/moodLogSplash');
-var issueAlt = require('./routes/issueAlt');
+var issue2 = require('./routes/issue2');
 var get_data_json = require('./routes/get_data_json');
 var set_data_json = require('./routes/set_data_json');
 //var history = require('./routes/history');
@@ -69,7 +69,7 @@ app.get('/daily-entry', dailyEntry.view);
 app.get('/signup', signup.view);
 app.get('/login', login.view);
 app.get('/issue/:issueName', issue.view);
-app.get('/issueAlt/:issueName', issueAlt.view);
+app.get('/issue2/:issueName', issue2.view);
 app.get('/get_data_json', get_data_json.view);
 
 

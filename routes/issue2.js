@@ -7,5 +7,5 @@ exports.view = function(req, res){
 	var data = require('../data.json');
 	var oneData = data[titleName];
 	console.log(oneData);
-  	res.render('issueAlt', oneData);
+  	res.render('issue2', oneData);
 };
