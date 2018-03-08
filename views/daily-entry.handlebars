@@ -1,0 +1,59 @@
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115292039-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115292039-1');
+</script>
+
+
+	<title>Daily Mood Log</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<script src="../js/jquery-1.11.0.js"></script>
+	<script src="../js/storeMood.js"></script>
+	<link href="../css/daily-mood-entry.css" rel="stylesheet">
+</head>
+<body style="margin: 0;">
+	<div class="icon-bar">
+	  <div class="navbar-new">
+	    <i onclick="goBack()" class="fa fa-chevron-left"></i>
+	  </div>
+	  <!-- <div class="navbar-settings">
+	    <div class="dropdown">
+	      <button class="dropbtn">&#9776;</button>
+	      <div id="dropdown-content" style="right:0">
+	        <a href="/updateInfo">Settings</a>
+	        <a href="/">Log Out</a>
+	      </div>
+	    </div>
+	  </div> -->
+	  <h2>DAILY ENTRY</h2>
+	</div>
+
+
+	<div class="mood-orange"></div>
+	<div class="instructions">Below can you write in a few sentences why you are feeling this way about the issue today?</div>
+
+	<form id="myForm">
+		<div class="entry">
+    		<textarea id="text-multi-line" placeholder="2-3 sentences" required></textarea>
+		</div>
+	</form>
+
+	<div class="navigation-table-container">
+		<table class="navigation-table2">
+			<tr>
+				<td class="back-arrow-section"><a id="backbutton" href="/daily-mood"><img src='images/greenback.png' alt="Back Button" width=16.85 height=16.85></a></td>
+				<td class="back-text-section"><a id="backtext" onclick="goBack()" class="button"><div class="back-login">Back</div></a></td>
+				<td class="finish-section filled-in" id="finish"><div class="log-in2">Finish</div></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
