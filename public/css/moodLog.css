@@ -21,6 +21,7 @@ body {
   padding-right: 48px;
 }
 
+
 .mood-title {
   font-family: Roboto;
   font-weight: 400;
@@ -96,7 +97,7 @@ body {
   float: left;
   color:white;
   left: 0;
-  padding-left: 12px;
+  padding-left: 16px;
   padding-right: 10px;
   margin-top: 16px;
 }
